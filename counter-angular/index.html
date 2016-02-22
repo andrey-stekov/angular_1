@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Counter</title>
+	</head>
+	<body ng-app="CounterApp">
+        <div ng-controller="CounterController as c">
+            <a href="#" ng-click="c.click()">Counter: {{c.count}}</a>
+        </div>
+		<script src="angular.min.js"></script>
+		<script src="app_angular_counter.js"></script>
+	</body>
+</html>

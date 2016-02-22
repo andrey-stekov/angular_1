@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Counter</title>
+	</head>
+	<body ng-app>
+        <div ng-init="count = 0">
+            <a href="#" ng-click="count = count + 1">Counter: {{count}}</a>
+            <p><span ng-show="count % 2 !== 0">no</span>even</p>
+        </div>
+		<script src="angular.min.js"></script>
+	</body>
+</html>

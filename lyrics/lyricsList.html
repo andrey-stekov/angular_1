@@ -1,0 +1,9 @@
+<div>
+    <a ng-repeat="song in tabCtrl.lyrics" 
+       ng-click="tabCtrl.setTab($index)" href="#">({{song.author}} - {{song.title}})</a>
+</div>
+
+<div>
+    <pre ng-repeat="song in tabCtrl.lyrics"
+         ng-show="tabCtrl.isSowTab($index)">{{song.lyrics}}</pre>
+</div>
